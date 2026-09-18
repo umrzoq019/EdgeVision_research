@@ -1,0 +1,23 @@
+[
+  {
+    "model": "SmallCNN",
+    "accuracy_percent": 40.7,
+    "trainable_parameters": 75754,
+    "model_size_mb": 0.293,
+    "cpu_latency_ms_per_image": 1.252
+  },
+  {
+    "model": "TinyCNN",
+    "accuracy_percent": 30.2,
+    "trainable_parameters": 4178,
+    "model_size_mb": 0.019,
+    "cpu_latency_ms_per_image": 0.475
+  },
+  {
+    "model": "NanoCNN",
+    "accuracy_percent": 26.8,
+    "trainable_parameters": 1230,
+    "model_size_mb": 0.008,
+    "cpu_latency_ms_per_image": 0.31
+  }
+]
