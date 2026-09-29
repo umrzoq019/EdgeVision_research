@@ -1,0 +1,21 @@
+{
+  "experiment": "EdgeVision v2 - stronger training",
+  "device": "cpu",
+  "seed": 42,
+  "settings": {
+    "epochs": 30,
+    "total_train": 10000,
+    "val_size": 1000,
+    "test_subset": 1000,
+    "batch_size": 128,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "cpu_threads": 1
+  },
+  "results": [
+    {"model":"SmallCNNv2","test_accuracy_percent":61.30,"trainable_parameters":75946,"model_size_mb":0.298,"cpu_latency_ms_per_image":1.278},
+    {"model":"TinyCNNv2","test_accuracy_percent":38.70,"trainable_parameters":4218,"model_size_mb":0.021,"cpu_latency_ms_per_image":0.534},
+    {"model":"NanoCNNv2","test_accuracy_percent":35.70,"trainable_parameters":1250,"model_size_mb":0.010,"cpu_latency_ms_per_image":0.355}
+  ],
+  "source_note": "Values preserved from the completed Colab run supplied in the project conversation."
+}
