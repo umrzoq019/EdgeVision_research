@@ -1,0 +1,10 @@
+{
+  "threads": 1,
+  "models": {
+    "SmallCNNv2": {"median_ms_per_image":1.2824,"mean_ms_per_image":1.2803,"min_ms_per_image":1.2273,"max_ms_per_image":1.3292},
+    "TinyCNNv2": {"median_ms_per_image":0.5468,"mean_ms_per_image":0.5453,"min_ms_per_image":0.5210,"max_ms_per_image":0.5689},
+    "NanoCNNv2": {"median_ms_per_image":0.3749,"mean_ms_per_image":0.4195,"min_ms_per_image":0.3546,"max_ms_per_image":0.6382},
+    "NanoCNNv2_distilled": {"median_ms_per_image":0.5690,"mean_ms_per_image":0.5651,"min_ms_per_image":0.5246,"max_ms_per_image":0.5962}
+  },
+  "benchmark_protocol": {"repeats_per_round":500,"warmup":50,"rounds":7,"threads":1}
+}
