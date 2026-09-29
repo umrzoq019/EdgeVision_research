@@ -1,0 +1,15 @@
+{
+  "experiment":"Knowledge distillation",
+  "teacher":"SmallCNNv2",
+  "student":"NanoCNNv2",
+  "epochs":30,
+  "temperature":4.0,
+  "alpha":0.5,
+  "best_validation_accuracy_percent":34.5,
+  "test_accuracy_percent":33.2,
+  "trainable_parameters":1250,
+  "model_size_mb":0.009926795959472656,
+  "cpu_latency_ms_per_image":0.3695800200011945,
+  "training_time_seconds":438.05271735099996,
+  "source_note":"Values preserved from the completed Colab run supplied in the project conversation."
+}
