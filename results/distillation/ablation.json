@@ -1,0 +1,13 @@
+{
+  "experiment":"Knowledge distillation ablation",
+  "teacher":"SmallCNNv2",
+  "student":"NanoCNNv2",
+  "epochs":30,
+  "results":[
+    {"method":"T2_soft25","temperature":2.0,"soft_weight":0.25,"test_accuracy_percent":35.20,"model_size_mb":0.010,"cpu_latency_ms_per_image":0.372},
+    {"method":"T4_soft25","temperature":4.0,"soft_weight":0.25,"test_accuracy_percent":34.60,"model_size_mb":0.010,"cpu_latency_ms_per_image":0.362},
+    {"method":"T2_soft50","temperature":2.0,"soft_weight":0.50,"test_accuracy_percent":35.80,"model_size_mb":0.010,"cpu_latency_ms_per_image":0.349}
+  ],
+  "independent_nanocnn_reference_test_accuracy_percent":35.70,
+  "source_note":"Values reconstructed from the completed ablation console output supplied in the project conversation because the original Colab metrics.json was not retained."
+}
