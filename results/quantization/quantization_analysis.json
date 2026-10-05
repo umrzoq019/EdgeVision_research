@@ -1,0 +1,13 @@
+{
+  "fp32_test_accuracy_percent": 35.7,
+  "int8_test_accuracy_percent": 34.1,
+  "accuracy_change_pp": -1.6000000000000014,
+  "fp32_size_mb": 0.009831,
+  "int8_size_mb": 0.008512,
+  "size_reduction_percent": 13.416742955955641,
+  "compression_ratio": 1.1549577067669172,
+  "fp32_median_latency_ms": 0.5294,
+  "int8_median_latency_ms": 0.5617,
+  "latency_speedup": 0.9424959943030087,
+  "latency_change_percent": 6.101246694370976
+}

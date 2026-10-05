@@ -1,0 +1,62 @@
+{
+  "experiment": "NanoCNNv2 INT8 post-training static quantization",
+  "model": "NanoCNNv2",
+  "checkpoint": "/content/drive/MyDrive/EdgeVision/results/multi_seed/seed_42/NanoCNNv2.pt",
+  "seed": 42,
+  "quantization_engine": "x86",
+  "calibration_samples": 1000,
+  "test_samples": 1000,
+  "fp32": {
+    "validation_accuracy_percent": 38.9,
+    "test_accuracy_percent": 35.7,
+    "size_mb": 0.009831428527832031,
+    "latency": {
+      "median_ms_per_image": 0.5293684700000085,
+      "mean_ms_per_image": 0.4650992479999851,
+      "min_ms_per_image": 0.35139991799997006,
+      "max_ms_per_image": 0.5636251379999067,
+      "rounds": [
+        0.5406248500000856,
+        0.5293684700000085,
+        0.5636251379999067,
+        0.5433700219998627,
+        0.3739268760000414,
+        0.35139991799997006,
+        0.3533794620000208
+      ],
+      "repeats_per_round": 500,
+      "warmup": 50,
+      "threads": 1
+    }
+  },
+  "int8": {
+    "validation_accuracy_percent": 38.6,
+    "test_accuracy_percent": 34.1,
+    "size_mb": 0.008511543273925781,
+    "latency": {
+      "median_ms_per_image": 0.5617095579998477,
+      "mean_ms_per_image": 0.5722245814285348,
+      "min_ms_per_image": 0.5484593339999719,
+      "max_ms_per_image": 0.6133753379999689,
+      "rounds": [
+        0.5707472480000888,
+        0.5617095579998477,
+        0.5601971119999689,
+        0.6133753379999689,
+        0.5517773980000129,
+        0.5484593339999719,
+        0.5993060819998846
+      ],
+      "repeats_per_round": 500,
+      "warmup": 50,
+      "threads": 1
+    }
+  },
+  "comparison": {
+    "accuracy_change_percentage_points": -1.6000000000000014,
+    "size_reduction_percent": 13.425162479386943,
+    "compression_ratio": 1.1550700280112045,
+    "speedup": 0.9424238246630514
+  },
+  "source_note": "Original Colab output (timing apparently sequential, FP32 block then INT8 block; inferred from the benchmark protocol because the original code was not preserved). Calibration data source is not recorded. Superseded by src/quantize_ptq.py once re-run."
+}
