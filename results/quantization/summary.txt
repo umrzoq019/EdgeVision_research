@@ -1,0 +1,33 @@
+EdgeVision INT8 Quantization Experiment
+============================================================
+
+Model: NanoCNNv2
+Checkpoint: /content/drive/MyDrive/EdgeVision/results/multi_seed/seed_42/NanoCNNv2.pt
+Quantization engine: x86
+Calibration samples: 1000
+
+ACCURACY
+------------------------------------------------------------
+FP32 test: 35.70%
+INT8 test: 34.10%
+Change: -1.60 percentage points
+
+MODEL SIZE
+------------------------------------------------------------
+FP32: 0.009831 MB
+INT8: 0.008512 MB
+Reduction: 13.43%
+Compression: 1.16x
+
+LATENCY
+------------------------------------------------------------
+FP32 median: 0.5294 ms/image
+INT8 median: 0.5617 ms/image
+Speedup: 0.94x
+
+FILES
+------------------------------------------------------------
+FP32 checkpoint: /content/drive/MyDrive/EdgeVision/results/quantization/NanoCNNv2_fp32.pt
+INT8 checkpoint: /content/drive/MyDrive/EdgeVision/results/quantization/NanoCNNv2_int8.pt
+Metrics: /content/drive/MyDrive/EdgeVision/results/quantization/metrics.json
+Latency: /content/drive/MyDrive/EdgeVision/results/quantization/latency_repeated.json
