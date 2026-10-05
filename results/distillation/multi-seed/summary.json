@@ -1,0 +1,50 @@
+{
+  "experiment": "EdgeVision v2 multi-seed knowledge distillation",
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "student": "NanoCNNv2",
+  "teacher": "SmallCNNv2",
+  "settings": {
+    "epochs": 30,
+    "total_train": 10000,
+    "val_size": 1000,
+    "test_subset": 1000,
+    "batch_size": 128,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "temperature": 2.0,
+    "alpha": 0.5
+  },
+  "results": {
+    "test_accuracy_percent": {
+      "mean": 35.733333333333334,
+      "std": 1.2701705922171784,
+      "values": [
+        35.0,
+        37.2,
+        35.0
+      ]
+    },
+    "best_validation_accuracy_percent": {
+      "mean": 36.43333333333333,
+      "std": 0.8144527815247071,
+      "values": [
+        35.5,
+        37.0,
+        36.8
+      ]
+    },
+    "cpu_latency_ms_per_image": {
+      "mean": 0.32165756666169426,
+      "std": 0.0011335493055146177,
+      "values": [
+        0.32272933998683584,
+        0.3217723799934902,
+        0.3204709800047567
+      ]
+    }
+  }
+}
