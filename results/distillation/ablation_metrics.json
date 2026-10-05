@@ -1,0 +1,41 @@
+{
+  "experiment": "Knowledge distillation ablation",
+  "results": [
+    {
+      "method": "T2_soft25",
+      "temperature": 2.0,
+      "soft_weight": 0.25,
+      "cross_entropy_weight": 0.75,
+      "best_validation_accuracy_percent": 37.6,
+      "test_accuracy_percent": 35.2,
+      "trainable_parameters": 1250,
+      "model_size_mb": 0.010422706604003906,
+      "cpu_latency_ms_per_image": 0.691986970000471,
+      "training_time_seconds": 465.42540168700003
+    },
+    {
+      "method": "T4_soft25",
+      "temperature": 4.0,
+      "soft_weight": 0.25,
+      "cross_entropy_weight": 0.75,
+      "best_validation_accuracy_percent": 37.5,
+      "test_accuracy_percent": 34.6,
+      "trainable_parameters": 1250,
+      "model_size_mb": 0.010422706604003906,
+      "cpu_latency_ms_per_image": 0.3312423299985312,
+      "training_time_seconds": 472.5243085679999
+    },
+    {
+      "method": "T2_soft50",
+      "temperature": 2.0,
+      "soft_weight": 0.5,
+      "cross_entropy_weight": 0.5,
+      "best_validation_accuracy_percent": 36.8,
+      "test_accuracy_percent": 35.8,
+      "trainable_parameters": 1250,
+      "model_size_mb": 0.010422706604003906,
+      "cpu_latency_ms_per_image": 0.3377072800003589,
+      "training_time_seconds": 470.895941664
+    }
+  ]
+}
