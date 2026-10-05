@@ -1,0 +1,27 @@
+{
+  "model": "NanoCNNv2",
+  "seed": 42,
+  "n_seeds": 1,
+  "fp32_test_accuracy_percent": 35.7,
+  "int8_test_accuracy_percent": 34.1,
+  "accuracy_change_pp": -1.6000000000000014,
+  "binomial_se_pp_single_run": 1.5150940564862632,
+  "fp32_file_mb": 0.009831428527832031,
+  "int8_file_mb": 0.008511543273925781,
+  "file_size_reduction_percent": 13.425162479386943,
+  "fp32_payload_bytes_expected": 5176,
+  "fp32_median_ms": 0.5293684700000085,
+  "int8_median_ms": 0.5617095579998477,
+  "median_ratio_int8_over_fp32": 1.0610937179538453,
+  "fp32_rounds_max_over_min": 1.6039421443460744,
+  "per_round_ratio_int8_over_fp32": [
+    1.056,
+    1.061,
+    0.994,
+    1.129,
+    1.476,
+    1.561,
+    1.696
+  ],
+  "latency_conclusion": "inconclusive: FP32 rounds drifted by 60% within the run and FP32/INT8 appear to have been timed one after the other (not interleaved)"
+}

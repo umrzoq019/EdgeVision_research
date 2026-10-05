@@ -1,0 +1,5 @@
+type,model,test_accuracy_mean,test_accuracy_sd,parameters,fp32_payload_bytes,non_dominated_acc_vs_params,non_dominated_acc_vs_payload,note
+baseline,SmallCNNv2,61.833333333333336,1.4742229591663982,75946,305344,True,True,by means only; NanoCNNv2_distilled vs NanoCNNv2 is not statistically distinguishable
+baseline,TinyCNNv2,40.03333333333334,1.5275252316519465,4218,17208,True,True,by means only; NanoCNNv2_distilled vs NanoCNNv2 is not statistically distinguishable
+baseline,NanoCNNv2,35.199999999999996,0.7810249675906683,1250,5176,False,False,by means only; NanoCNNv2_distilled vs NanoCNNv2 is not statistically distinguishable
+distilled,NanoCNNv2_distilled,35.733333333333334,1.2701705922171784,1250,5176,True,True,by means only; NanoCNNv2_distilled vs NanoCNNv2 is not statistically distinguishable
