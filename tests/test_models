@@ -1,0 +1,23 @@
+"""Sanity tests for the model definitions (parameter counts are quoted in the docs)."""
+import sys
+from pathlib import Path
+
+import pytest
+import torch
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+from train_v2 import MODELS, count_parameters  # noqa: E402
+
+EXPECTED = {"SmallCNNv2": 75_946, "TinyCNNv2": 4_218, "NanoCNNv2": 1_250}
+
+
+@pytest.mark.parametrize("name,params", EXPECTED.items())
+def test_parameter_count(name, params):
+    assert count_parameters(MODELS[name]()) == params
+
+
+@pytest.mark.parametrize("name", EXPECTED)
+def test_forward_shape(name):
+    model = MODELS[name]().eval()
+    with torch.inference_mode():
+        assert model(torch.randn(2, 3, 32, 32)).shape == (2, 10)
