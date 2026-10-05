@@ -1,19 +1,9 @@
-# data & checkpoints (regenerate, or attach to a GitHub Release / Git LFS)
-data/
-*.pt
-*.pth
-*.npz
-# Colab-style scratch output dirs written by the scripts' defaults
-results_v2/
-results_distill/
-results_distill_ablation/
-results/*_rerun/
-results/distillation/*_rerun/
-# python
 __pycache__/
-*.pyc
+*.py[cod]
 .ipynb_checkpoints/
 .venv/
-# os / editor
-.DS_Store
-.vscode/
+venv/
+data/
+*.log
+results/runs/
+results/tmp/

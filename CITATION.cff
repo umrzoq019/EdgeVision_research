@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "EdgeVision: Accuracy vs. Efficiency in Small CNNs"
+authors:
+  - family-names: Primqulov
+    given-names: Umrzoq
+version: 1.0.0
+date-released: 2026-10-05
+license: MIT
+repository-code: "https://github.com/umrzoq019/EdgeVision_research"

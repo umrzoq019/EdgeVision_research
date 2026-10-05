@@ -1,7 +1,4 @@
-torch>=2.0        # 2.0+ needed for the "x86" quantization engine
-torchvision
 numpy
-pandas
 matplotlib
-scipy             # optional: exact p-values / CIs in src/final_analysis.py
-pytest            # optional: tests/
+torch
+torchvision
